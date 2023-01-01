@@ -39,8 +39,23 @@
     width: 5px;
     height:5px;
     border-radius: 50px;
-    position: absolute;
     top:-12px;
     right:-7px;
+    position: absolute;
 }
 
+.nav__notification1{
+    color:white;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size:12px;
+    background-color: tomato;
+    width: 5px;
+    height:5px;
+    border-radius: 50px;
+    top:-38px;
+    left:8px;
+    position: relative;
+   
+}
