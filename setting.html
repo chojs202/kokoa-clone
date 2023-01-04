@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Chats - kokoa clone</title>
+    <title>Settings - kokoa clone</title>
   </head>
 
   <body>
@@ -23,42 +23,44 @@
         <i class="fas fa-bolt"></i>
       </div>
     </div>
-    <header class="screen-header">
-      <h1 class="screen-header__title">Chats</h1>
-      <div class="screen-header__icons">
-        <span><i class="fas fa-search fa-2x"></i></span>
-        <span><i class="far fa-comment fa-2x"></i></span>
-        <span><i class="fas fa-music fa-2x"></i></span>
-        <span>
-          <a href="setting.html"><i class="fas fa-cog fa-2x">
-           </i
-        ></a></span>
-        </span>
+    <header class="alt-header">
+      <div class="alt-header__column">
+        <a href="javascript:history.back()">
+          <i class="fas fa-chevron-left fa-2x"></i
+        ></a>
       </div>
+      <div class="alt-header__column">
+        <h1 class="alt-header__title">Settings</h1>
+      </div>
+      <div class="alt-header__column"><i class="fas fa-search fa-2x"></i></div>
     </header>
 
     <main class="main-screen">
-      <a href="chat.html">
-      <div class="user-component">
-        <div class="user-component__column">
-          <img
-            src="https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/5f9c58c2017800001.png"
-            class="user-component__avatar user-component__avatar"
-          />
-          <div class="user-component__text">
-            <h4 class="user-component__title">KokoaTalk</h4>
-            <h6 class="user-component__sub-title">
-              Please check My Kokoa Account Info
-            </h6>
+      <ul class="settings-list">
+        <li class="settings__setting">
+          <div class="settings__setting-column">
+            <i class="fas fa-bullhorn"></i>
+            <span>Notices</span>
           </div>
-        </div>
-        <div class="user-component__column">
-          <span class="user-component__time">22:22</span>
-          <div class="badge">2</div>
-        </div>
-      </div></a>
-     
+          <div class="settings__setting-column"></div>
+        </li>
+        <li class="settings__setting">
+          <div class="settings__setting-column">
+            <i class="fas fa-flask"></i>
+            <span>KoKoa Lab</span>
+          </div>
+          <div class="settings__setting-column"></div>
+        </li>
+        <li class="settings__setting">
+          <div class="settings__setting-column">
+            <i class="fas fa-info-circle"></i>
+            <span>Version</span>
+          </div>
+          <div class="settings__setting-column">Latest Version</div>
+        </li>
+      </ul>
     </main>
+
     <nav class="nav">
       <ul class="nav__list">
         <li class="nav__btn">
@@ -85,9 +87,6 @@
         </li>
       </ul>
     </nav>
-    <div id="no-mobile">
-      Your screen is too big !
-    </div>
     <script
       src="https://kit.fontawesome.com/6478f529f2.js"
       crossorigin="anonymous"

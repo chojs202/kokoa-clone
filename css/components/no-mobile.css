@@ -1,0 +1,22 @@
+#no-mobile{
+    position: absolute;
+    z-index:99;
+    height: 100vh;
+    background-color: var(--yellow);
+    width: 100vw;
+    display:flex;
+    top:0;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    font-weight: 600;
+    position: fixed;
+}
+
+@media screen and (max-width:545px) and (orientation:portrait){
+    #no-mobile{
+        display:none;
+    }
+}
+
+    
